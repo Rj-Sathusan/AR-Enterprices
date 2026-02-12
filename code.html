@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AR Enterprises | Premier Sri Lanka Tourism &amp; Transport</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#D4AF37",
+                        "primary-dark": "#B8860B",
+                        "secondary-green": "#2ecc71",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #D4AF37;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gold { color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+<a 
+  class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[60] flex items-center gap-3 bg-secondary-green hover:bg-[#27ae60] text-white px-5 py-3 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 group"
+  href="https://wa.me/94782346923?text=Hello%20AR%20Enterprises,%20I%20would%20like%20more%20information%20about%20your%20Sri%20Lanka%20tour%20services.%20Please%20assist%20me.%20Thank%20you."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div class="flex items-center justify-center">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412 0 6.556-5.338 11.891-11.893 11.891-2.01 0-3.987-.51-5.742-1.47l-6.355 1.679zm6.208-3.804c1.611.956 3.197 1.441 4.843 1.441 5.413 0 9.814-4.401 9.814-9.814 0-5.413-4.401-9.813-9.814-9.813-5.414 0-9.814 4.401-9.814 9.813 0 1.834.512 3.633 1.479 5.213l-.973 3.549 3.649-.961zm11.161-6.19c-.3-.15-1.772-.875-2.046-.975-.275-.101-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.492-.893-.797-1.495-1.78-1.67-2.08-.175-.3-.018-.462.13-.61.135-.133.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.491-.51-.675-.52-.174-.01-.374-.012-.574-.012s-.525.075-.8.375c-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.115 3.231 5.123 4.527.714.308 1.272.492 1.707.63.717.228 1.369.196 1.884.119.574-.085 1.772-.725 2.022-1.425.25-.7.25-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"></path>
+    </svg>
+  </div>
+  <span class="font-bold whitespace-nowrap">Say Hi on WhatsApp</span>
+</a>
+
+<nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-3">
+<img alt="AR Enterprises Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxnyO9kqhbDZioEKG1ofpsVYGlULwBDhmJ-KErBtOqKAXdLR_9q0eAhu6Jtt_0oqdmMdspyF8dBiasGFmcfM_faG5IBXHG9-jUiwaBusD2QdQq8-Bu5DWgmVtZZ5LU_nwgWaMEw25PYnM09j2Ra3kD9pQsByumrBD190f7tO3q6xsl1sgtWjCfzwG9ULu0A6OOoLz77jOJL9a_KdcxqRguhmejQ_aQW8sye8TXAlRdNml1jPsqz_VWZhXtTvZVF0vul_vafbrycA"/>
+<span class="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">AR<span class="text-primary text-xl">ENTERPRISES</span></span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="font-medium hover:text-primary transition-colors" href="#roots">Our Roots</a>
+<a class="font-medium hover:text-primary transition-colors" href="#clients">Clients</a>
+<a class="font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="font-medium hover:text-primary transition-colors" href="#why-us">Why Us</a>
+<a 
+  class="bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-primary/20"
+  href="https://wa.me/94782346923?text=Hello%20AR%20Enterprises,%20I%20would%20like%20to%20book%20a%20tour%20in%20Sri%20Lanka.%20Please%20share%20available%20packages%20and%20pricing.%20Thank%20you."
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Book Now
+</a>
+</div>
+<div class="md:hidden">
+<span class="material-icons cursor-pointer">menu</span>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Scenic Sri Lanka Landscape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP6nlGLbZIXhGvP6IrMHnQbsoHnAMcUXAYHjr-rb5_iaDxX4DBw3x0ccwwO_C1ekPbIQZ6R6skXgbs6S07V2eML-rvb3ETre65RsgbwdekLPBREt_sLce2p-S2byasLW4-xetZLMTMGsCH-LIF7VLdeyFFNX8ldzYHZtOM0_bs4zxDsfBL8ZEWxpYm7tqvBK4xM1Kev7BnweLBLQRui_Xec0brL-3_Xp4k5689_xvLsM2llYlry__4_k9rt4hm9-jiCiV3Bnpuvg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-4 rounded-full bg-primary/20 text-primary border border-primary/30 font-bold text-sm mb-6 backdrop-blur-sm">
+                    Discover the Pearl of the Indian Ocean
+                </span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Journey Through <span class="text-primary">Sri Lanka</span> with Comfort
+                </h1>
+<p class="text-lg text-slate-200 mb-8 leading-relaxed">
+                    Premium transport and tailor-made tour services with over 13 years of expertise. From airport pickups to wildlife safaris, we make your island dreams come true.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 mb-10">
+<div class="flex items-center gap-2 text-white/90">
+<span class="material-icons text-secondary-green text-xl">check_circle</span>
+<span class="font-medium">Airport Pick-up &amp; Drop</span>
+</div>
+<div class="flex items-center gap-2 text-white/90">
+<span class="material-icons text-secondary-green text-xl">check_circle</span>
+<span class="font-medium">Customized Tour Packages</span>
+</div>
+<div class="flex items-center gap-2 text-white/90">
+<span class="material-icons text-secondary-green text-xl">check_circle</span>
+<span class="font-medium">Family &amp; Group Travel</span>
+</div>
+<div class="flex items-center gap-2 text-white/90">
+<span class="material-icons text-secondary-green text-xl">check_circle</span>
+<span class="font-medium">24-Hour Service</span>
+</div>
+<div class="flex items-center gap-2 text-white/90 col-span-1 sm:col-span-2">
+<span class="material-icons text-secondary-green text-xl">check_circle</span>
+<span class="font-medium">Clean &amp; Comfortable Vehicles</span>
+</div>
+</div>
+<div class="h-20 sm:h-24"></div>
+
+</div>
+</div>
+</header>
+<!-- STATS SECTION (with count-up animation) -->
+<section class="relative z-20 -mt-16 max-w-5xl mx-auto px-4">
+  <div
+    class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-800"
+  >
+    <div class="text-center border-r border-slate-100 dark:border-slate-800 last:border-0">
+      <div class="text-3xl font-extrabold text-primary mb-1">
+        <span class="countup" data-target="13" data-suffix="+">0</span>
+      </div>
+      <div class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Years Experience</div>
+    </div>
+
+    <div class="text-center md:border-r border-slate-100 dark:border-slate-800 last:border-0">
+      <div class="text-3xl font-extrabold text-primary mb-1">
+        <span class="countup" data-target="100" data-suffix="+">0</span>
+      </div>
+      <div class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Happy Travelers</div>
+    </div>
+
+    <div class="text-center border-r border-slate-100 dark:border-slate-800 last:border-0">
+      <div class="text-3xl font-extrabold text-primary mb-1">
+        <span class="countup" data-target="10" data-suffix="+">0</span>
+      </div>
+      <div class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Luxury Vehicles</div>
+    </div>
+
+    <div class="text-center last:border-0">
+      <div class="text-3xl font-extrabold text-primary mb-1">
+        <span class="countup" data-target="24" data-prefix="" data-suffix="/7">0</span>
+      </div>
+      <div class="text-sm font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Live Support</div>
+    </div>
+  </div>
+</section>
+
+<!-- Put this script near the bottom of the page, before </body> -->
+<script>
+  (function () {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function formatNumber(n) {
+      return n.toLocaleString();
+    }
+
+    function animateCount(el) {
+      const target = parseFloat(el.dataset.target || "0");
+      const prefix = el.dataset.prefix || "";
+      const suffix = el.dataset.suffix || "";
+      const duration = 4500; // ms
+      const start = 0;
+
+      if (prefersReducedMotion) {
+        el.textContent = `${prefix}${formatNumber(target)}${suffix}`;
+        return;
+      }
+
+      const startTime = performance.now();
+
+      function tick(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        // Ease-out
+        const eased = 1 - Math.pow(1 - progress, 3);
+
+        const current = Math.round(start + (target - start) * eased);
+        el.textContent = `${prefix}${formatNumber(current)}${suffix}`;
+
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
+    }
+
+    const counters = document.querySelectorAll(".countup");
+
+    // Only run when section becomes visible
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const el = entry.target;
+          if (el.dataset.animated === "true") return;
+
+          el.dataset.animated = "true";
+          animateCount(el);
+          obs.unobserve(el);
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    counters.forEach((el) => observer.observe(el));
+  })();
+</script>
+
+<section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="about">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
+<img alt="Luxury Travel in Sri Lanka" class="rounded-2xl shadow-2xl relative z-10 w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz97z07kS1q95-KxBx00UtL1vu0wz2jz1feus32uvgcffmG3kCVDuajj38gv8A9Dn02CIaB3VFgLrjgzlHvjUMsj47rEl0BNfBo5H5zm1ez7jp8sCmcus7LMbLLwAorZT8sPAP57sjuuY5-xZRDGRamA9kscHEdxQEXl48mDTdfYN30Qo8l4UGSMmRtvyKlfLfhC-JBbkkBhiE2oOBEnvRLXUt_tgUq-W59-CaOSjgjXjoelsgPDNOrUVFkzjkxJCSyikSTRUCqA"/>
+<div class="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded-2xl shadow-xl z-20">
+<p class="text-4xl font-black mb-1">100%</p>
+<p class="text-sm font-bold opacity-90">Safety Record Since 2011</p>
+</div>
+</div>
+<div>
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Our Legacy</h2>
+<h3 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight">Crafting Unforgettable Memories Across the Island</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                    AR Enterprises was born from a passion for showcasing the true essence of Sri Lanka. For over a decade, we have been the trusted partner for international travelers, providing not just transport, but a window into our rich culture and breathtaking nature.
+                </p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-icons text-primary text-sm">check</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-300">Local expertise with global standards</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-icons text-primary text-sm">check</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-300">Multilingual Drivers &amp; Professional Guides</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-icons text-primary text-sm">check</span>
+</div>
+<span class="font-bold text-slate-700 dark:text-slate-300">Modern, climate-controlled fleet</span>
+</div>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    Discover Our Story <span class="material-icons">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50" id="roots">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<h2 class="text-secondary-green font-bold tracking-widest uppercase text-sm mb-4">Our Roots</h2>
+<h3 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight">Batticaloa &amp; The East Coast Experts</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        While we serve the entire island, our heart and specialized expertise lie in the Eastern Province. We take pride in our deep-rooted connections in Batticaloa, Ampara, and Trincomalee.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border-l-4 border-secondary-green">
+<h4 class="font-bold mb-1">Local Specialized Routes</h4>
+<p class="text-sm text-slate-500">Intimate knowledge of the best coastal paths and hidden gems in the East.</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border-l-4 border-secondary-green">
+<h4 class="font-bold mb-1">Strong Regional Presence</h4>
+<p class="text-sm text-slate-500">Instant support and coordination across all major Eastern hubs.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-secondary-green/10 rounded-xl border border-secondary-green/20">
+<span class="material-icons text-secondary-green">explore</span>
+<p class="text-sm font-bold italic">Experience the "Land of the Singing Fish" with those who know it best.</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl h-[450px]">
+<img alt="Batticaloa Lighthouse and Coast" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrSGgAjYHWWkwlWDwpxg5fu2CZX0LgxcVm0_sD50ySQQwwXQBTeQJ_eN1BiAAuasiIGQB_J6FGEh78gF5DbC_zdTvBh9bO6vo8QLqq5kidoVa2upltKtbrHHjDzzGSjbwssGVgUs0kBw5Ird9YuwonGHyLWZhVWzfsI43hP2mCBuM1L4BH7tN2eggmWAwJGUEhpO2aWQtIMkjsrVTMLXg-hFRYLBkZ8ZaTO_9dQ8UiwqYDJBezBbZwCMYnr95BQsNOFdq4Ef0SmA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="text-secondary-green font-bold text-sm uppercase mb-1">Signature Route</p>
+<h4 class="text-2xl font-bold">The Pristine East Coast Way</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-background-dark" id="clients">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Who We Serve</h2>
+<h3 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">Tailored Solutions for Every Traveler</h3>
+<p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400">At AR Enterprises, we recognize that every journey is unique. We cater to a diverse range of clients with specialized services designed to meet specific needs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-xl hover:border-primary/30 transition-all group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">public</span>
+</div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">International Tourists</h4>
+<p class="text-xs font-bold text-slate-600 dark:text-slate-400">Personalized island-wide tours and expert multi-lingual guides.</p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-xl hover:border-primary/30 transition-all group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">family_restroom</span>
+</div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Families and Groups</h4>
+<p class="text-xs font-bold text-slate-600 dark:text-slate-400">Safe, spacious vans and child-friendly itineraries for all ages.</p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-xl hover:border-primary/30 transition-all group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">business_center</span>
+</div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Corporate Travelers</h4>
+<p class="text-xs font-bold text-slate-600 dark:text-slate-400">Reliable, punctual executive transport and airport transfers.</p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-xl hover:border-primary/30 transition-all group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">account_balance</span>
+</div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Government &amp; NGO</h4>
+<p class="text-xs font-bold text-slate-600 dark:text-slate-400">Dependable long-term field visit transport across the island.</p>
+</div>
+<div class="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-xl hover:border-primary/30 transition-all group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">school</span>
+</div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">School &amp; Institutional</h4>
+<p class="text-xs font-bold text-slate-600 dark:text-slate-400">Large capacity buses for safe and organized educational excursions.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Our Services</h2>
+<h3 class="text-4xl font-extrabold text-slate-900 dark:text-white">Everything You Need For Your Island Journey</h3>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-icons text-primary group-hover:text-white text-3xl">flight_land</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Airport Transfers</h4>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Punctual and comfortable pickups from Bandaranaike International Airport (BIA) to any destination in Sri Lanka.</p>
+<ul class="text-sm space-y-2 font-bold text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-icons text-primary text-xs">circle</span> 24/7 Availability</li>
+<li class="flex items-center gap-2"><span class="material-icons text-primary text-xs">circle</span> Meet &amp; Greet Service</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-icons text-primary group-hover:text-white text-3xl">map</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Tailor-made Tours</h4>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Customized multi-day itineraries covering historical sites, tea country, and pristine beaches.</p>
+<ul class="text-sm space-y-2 font-bold text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-icons text-primary text-xs">circle</span> Expert Local Guides</li>
+<li class="flex items-center gap-2"><span class="material-icons text-primary text-xs">circle</span> Flexible Itineraries</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-icons text-primary group-hover:text-white text-3xl">nature_people</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Wildlife Safaris</h4>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Thrilling adventures in Yala, Udawalawe, and Minneriya National Parks with professional trackers.</p>
+<ul class="text-sm space-y-2 font-bold text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-icons text-primary text-xs">circle</span> 4x4 Luxury Jeeps</li>
+<li class="flex items-center gap-2"><span class="material-icons text-primary text-xs">circle</span> Best Wildlife Sighting</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="why-us">
+<div class="bg-primary rounded-3xl overflow-hidden relative shadow-2xl">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-black/5 skew-x-12 transform origin-top"></div>
+<div class="relative z-10 p-12 lg:p-20 grid lg:grid-cols-2 gap-16 items-center">
+<div class="text-slate-900">
+<h2 class="font-bold tracking-widest uppercase text-sm mb-4 opacity-80">The AR Advantage</h2>
+<h3 class="text-4xl font-extrabold mb-8 leading-tight">Why Travelers Trust Us for Over a Decade</h3>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-xl bg-white/40 flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-icons">verified_user</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Safety Guaranteed</h4>
+<p class="text-slate-800 font-medium">Fully insured vehicles and experienced drivers with impeccable safety records.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-xl bg-white/40 flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-icons">headset_mic</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">24/7 Availability</h4>
+<p class="text-slate-800 font-medium">Round-the-clock support for any travel adjustments or emergency assistance.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-xl bg-white/40 flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="material-icons">payments</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Transparent Pricing</h4>
+<p class="text-slate-800 font-medium">No hidden costs. All-inclusive rates for fuel, taxes, and driver accommodation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Scenic coastal view of Mirissa beach" class="rounded-2xl shadow-lg h-64 w-full object-cover mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4kbi5Iw7Jp9ESi70PUkrmkP9ZwnYLCX6qVbbTVb96ZRduhe2FvfJUF_3fVTd0H9wQT-sbc3H6sXVL3YbJwpIKAElLPBFrSDHsopricBVtcxANQmE9JS2p2Z3bYv_igIw6ejqvhFWNJ1AYjZqZil7S6a_cTOFXKOg6KVwy-OkmHx_9X0qOLmMrtPq4b0cImQQKp2IZq51ttdFawX9zhU-jXZYHIzgSBjbS4Lmc45IPlOlRLnWNoyZ2LklM6IjOtWhTm_F_dyEwEg"/>
+<img alt="Majestic Sri Lankan elephant in Minneriya" class="rounded-2xl shadow-lg h-64 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyHugECsPJFy6LCCxROMTfH-HItP_8NR1HADwhfzORo8TES7DP8Vu4Olvgmsm8aWoJcnJz6bSI_sQI2k1CgBj6daDQYV4vuPHOIUMimCorWu9B051SWXrUAOWo_9T01pm5-5CNECL6-ANugjO0F1A5HZTvltu4LgtI1xgVmECNelzsoKXd9cwGAaR-k0yOsvcVsBoDXI3z5DwQ1bL-nm2oyc4swcarozfqZ2dDKkNkj3UHBb0Wzs9rmXjcICQ1ZgLnvW2bFBG_WA"/>
+<img alt="Lush green tea plantation in Nuwara Eliya" class="rounded-2xl shadow-lg h-64 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs4e_SUWQUgWu99ivczphz5dSSxohFMzJ3unX_lEZOxKWwMk7SMCRdZJ4vq_Rh1td_AibFeH61ttVJCmLMzC9e0Y-Q_LT9H94nh0g4efKkTNxawCfZuqZQPW1kacbw8qZ67TG3MZfkrOc7UsglqOa5zXgGKfPJ1BdJffWO4LCGF5AFxKl96zzwbRwHYmw81YZQ9CqGxxK6k1HCg8bm_8LByd7qByFalNGinEaA_eXJLJbjBD-7iLtUTK8IGJeMzWxX2WxZ4skQMg"/>
+<img alt="Ancient architectural site of Polonnaruwa ruins" class="rounded-2xl shadow-lg h-64 w-full object-cover -mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeGfiWlWyYT6gLaH6od7IzO7b13qI_15SPhVTmSR2v3h3l4z5aIRQvF80wsCHhGMBpztg_1qrDlIhOyISUq2RyrhF9XlLAzL2xOOnYWmral1XekCkP0KsxGLFBW4S_3VR83QxLJtqPafGeRTd-Ys7O1h0H1gaEmblRQw7og9nNq4J-688GM1OOS9QUdBahFi1FpJd3C2aViGBRgw9J-sew2se5dhmWsH_Ui1P01M_2k5PvhMtBr4nddAOmCyAWSH-jhk7RgpXbzA"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-slate-900/30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Our Destinations</h2>
+<h3 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6">Explore the Best of Sri Lanka</h3>
+<div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-2 rounded-full border border-primary/20">
+<span class="material-icons text-sm">info</span>
+<p class="text-sm font-bold italic">Proudly serving the Eastern Province: Strong presence in Batticaloa, Ampara, and Trincomalee.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Sigiriya Lion Rock" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeGfiWlWyYT6gLaH6od7IzO7b13qI_15SPhVTmSR2v3h3l4z5aIRQvF80wsCHhGMBpztg_1qrDlIhOyISUq2RyrhF9XlLAzL2xOOnYWmral1XekCkP0KsxGLFBW4S_3VR83QxLJtqPafGeRTd-Ys7O1h0H1gaEmblRQw7og9nNq4J-688GM1OOS9QUdBahFi1FpJd3C2aViGBRgw9J-sew2se5dhmWsH_Ui1P01M_2k5PvhMtBr4nddAOmCyAWSH-jhk7RgpXbzA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Sigiriya</h4>
+<p class="text-white/70 text-sm">Ancient Rock Fortress</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Panoramic view of the Temple of the Sacred Tooth Relic and Kandy Lake" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrNMV2gwroJ4YHWCR9e8wma0F0rqVQ4CN-YtAnRXlLqpqKNE-POZfuk9nK1S1ogTiykGomMlZ6kXUzqoC0IpQ9zeK8i6LQdamgi7m_cqQCyFlDVOYLLTgZq3P2VkkU1883gpr8zYPIeMJ9vvzsg3OEG98qn_59Kyb_jnXtzhxq2selTbKTglIj4NVKm5T6tc8-y2-rAbG_Nv3z_emkloNJF70WX3KPjSF9qgPPg6uIQ-kWu-gvn9mxVWYVLzTGw5AOhnTvSWj39A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Kandy</h4>
+<p class="text-white/70 text-sm">The Cultural Capital</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Ella Nine Arch Bridge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs4e_SUWQUgWu99ivczphz5dSSxohFMzJ3unX_lEZOxKWwMk7SMCRdZJ4vq_Rh1td_AibFeH61ttVJCmLMzC9e0Y-Q_LT9H94nh0g4efKkTNxawCfZuqZQPW1kacbw8qZ67TG3MZfkrOc7UsglqOa5zXgGKfPJ1BdJffWO4LCGF5AFxKl96zzwbRwHYmw81YZQ9CqGxxK6k1HCg8bm_8LByd7qByFalNGinEaA_eXJLJbjBD-7iLtUTK8IGJeMzWxX2WxZ4skQMg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Ella</h4>
+<p class="text-white/70 text-sm">Misty Highland Trails</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Mirissa Coconut Tree Hill" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4kbi5Iw7Jp9ESi70PUkrmkP9ZwnYLCX6qVbbTVb96ZRduhe2FvfJUF_3fVTd0H9wQT-sbc3H6sXVL3YbJwpIKAElLPBFrSDHsopricBVtcxANQmE9JS2p2Z3bYv_igIw6ejqvhFWNJ1AYjZqZil7S6a_cTOFXKOg6KVwy-OkmHx_9X0qOLmMrtPq4b0cImQQKp2IZq51ttdFawX9zhU-jXZYHIzgSBjbS4Lmc45IPlOlRLnWNoyZ2LklM6IjOtWhTm_F_dyEwEg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Mirissa</h4>
+<p class="text-white/70 text-sm">Tropical Beach Bliss</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Arugam Bay famous surf break and headland" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASciwQ4e-4S-m1umIYNxSe5mBt_fuwh-BZes2nTN4-i1HAs_cjjix6n_Oi79jBR4lZxeuuqWEDC9YXeNan64xO7CTd3003ImiNhGrKujAKG7xqJWmvxzSUA8e0elgeCQwdtRKEougV3v1JQoJMMx-Gc-IUvjRIWKBMiOpK8pSBVKMKmh9eSNf7N1O79XQ4e6WnIuL9C0RyyTwKm7nSRJ8LbohqiT0NhLDl57YBxjoBydzePuK_NEDtXecN2E_YAb_MyzrFNqAMZg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Arugam Bay</h4>
+<p class="text-white/70 text-sm">Surf &amp; Soul</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Wild Elephant in Minneriya" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyHugECsPJFy6LCCxROMTfH-HItP_8NR1HADwhfzORo8TES7DP8Vu4Olvgmsm8aWoJcnJz6bSI_sQI2k1CgBj6daDQYV4vuPHOIUMimCorWu9B051SWXrUAOWo_9T01pm5-5CNECL6-ANugjO0F1A5HZTvltu4LgtI1xgVmECNelzsoKXd9cwGAaR-k0yOsvcVsBoDXI3z5DwQ1bL-nm2oyc4swcarozfqZ2dDKkNkj3UHBb0Wzs9rmXjcICQ1ZgLnvW2bFBG_WA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Yala</h4>
+<p class="text-white/70 text-sm">Wild Safari Sanctuary</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Classic shot of Galle Fort lighthouse overlooking the ocean" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQZ7q_Fumr1CEOKiKdykX1wmMw-LoIr2-xh2gDK1_PW3WfoctSr-yWVwXAxwdolt38I3DHqU-nEOlLrEzn85Hfj0gphEg2MSu9okb4jfAnPxGMleK2obBCyja0ygTAYmuPQn4miqQeTXByRCw1GeAh5RrugcVTcUhzY1IDIgrjbTZShFj7z9zEEzCgv5kuHF3qfK5OjaqR8_26DwkXNO2XlUVpoEOr9PkQkc_6u0Ml7cTx4OgyTh69JzQyKJNFHbix6I4P9Ivqlw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Galle</h4>
+<p class="text-white/70 text-sm">Colonial Architecture</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+<img alt="Scenic view of the Batticaloa Lighthouse at sunset" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjrJxSZw91iwJ4emvLYfp1PIxu8EYaFgFJKWp_evkmvMJ2T1Ve24Genq_iaN_g08qe4MefQUYH4TzvrHO19fmjAPS-W1bF_Cw7DG4LlnpaCtaCPKTOYENFlbc0DN4bdGj7ZfR-JUBghC0aj14pDNaVhdhMdvsduIXuk-s47hVsfMPBN5UUFVE00e58tUDa_sV7XBMK7eXRHY4_NLy2NDTiYM2le9PoksxwlEv2_3MnQ_WjVOeVH8zdCsaxep_yDhEfbgPIjTIPjg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h4 class="text-xl font-bold text-white mb-1">Batticaloa</h4>
+<p class="text-white/70 text-sm">Land of the Singing Fish</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-slate-900 text-slate-300 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-5 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<img alt="AR Enterprises Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnt47bMNNPtPqYbUslnEuy51ZBKjYE30a3p-GLEZ2GOnwoNHOH8wpLB9aeAJRwxLgK1hNU6wE03AjE2L-UyhIyfboo5EiN_1rXl_R0hBnINjR0HL8PgJw7eP3tTRxonATBr5f5rqTvRYXlIwVM3KxhbuN0uQ2Y3E1AVYqj5CgoKYdY3iQimlL3TLpjHH_A-UhefUXaBKxcVevcrvQeuflGdEgfVhQ0z0pEcdF8jqP6hLsOE7YC5UKVWY1haLZq71mKQ0cIF3wRaA"/>
+<span class="text-xl font-extrabold tracking-tight text-white">AR<span class="text-primary text-lg">ENTERPRISES</span></span>
+</div>
+<p class="text-sm font-medium leading-relaxed mb-6">
+                        The ultimate choice for luxury transport and bespoke tours in the island of paradise. Excellence in service since 2011.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-icons text-sm">facebook</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-icons text-sm">camera_alt</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-sm font-bold">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#roots">Our Roots</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Our Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Vehicle Fleet</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Our Services</h5>
+<ul class="space-y-4 text-sm font-bold">
+<li><a class="hover:text-primary transition-colors" href="#">Airport Transfers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cultural Triangle Tour</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hill Country Tour</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Wild Safari Trips</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Beach Escapes</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Payment Options</h5>
+<ul class="space-y-4 text-sm font-bold">
+<li class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">payments</span>
+<span>Cash Payments</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">account_balance_wallet</span>
+<span>Cheques</span>
+</li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Get In Touch</h5>
+<ul class="space-y-4 text-sm font-bold">
+<li class="flex items-start gap-3">
+<span class="material-icons text-primary text-sm mt-0.5">place</span>
+<span>No.9A, Mariyamman kovil Road, Kallady, Batticaloa.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-icons text-primary text-sm">phone</span>
+<span>Hotline: 0772346923</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-icons text-primary text-sm">email</span>
+<span>info@arenterprises.lk</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold">
+<p>© 2024 AR Enterprises Sri Lanka. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-white" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
